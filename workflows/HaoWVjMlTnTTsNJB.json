@@ -1,0 +1,63 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Hacker News",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-02-05T07:44:19.132Z",
+  "id": "HaoWVjMlTnTTsNJB",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "Course Level One",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "3bffa67c-cb7d-47c0-a9f0-6afaee74abc0",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "all",
+        "limit": 10,
+        "additionalFields": {
+          "keyword": "automation"
+        }
+      },
+      "type": "n8n-nodes-base.hackerNews",
+      "typeVersion": 1,
+      "position": [
+        200,
+        0
+      ],
+      "id": "445b355f-5c09-4ac3-bbff-861220e718e2",
+      "name": "Hacker News",
+      "notesInFlow": true,
+      "notes": "Get the 10 latest articles."
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-02-05T07:50:32.000Z",
+  "versionId": "0570f4b7-de37-408f-83b5-8527eeacc021"
+}
